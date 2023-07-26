@@ -4,6 +4,11 @@
 ```
 192.168.1.10 test.com.vn
 ```
+## code test
+```
+docker pull elroydevops/car-serv
+docker run --name=car-serv -dp 8010:80 elroydevops/car-serv
+```
 ## Step 1: Tạo file cung cấp các thiết lập và yêu cầu cần thiết để tạo ra một Certificate Authority.
 - mkdir /etc/nginx/certs
 - cd /etc/nginx/certs
@@ -79,7 +84,7 @@ server {
     ssl_certificate_key /etc/nginx/certs/myAwesomeServer.pvk;
 
     location / {
-        proxy_pass http://192.168.1.10:8080;
+        proxy_pass http://192.168.1.10:8010;
 
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
