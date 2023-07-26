@@ -5,7 +5,8 @@
 192.168.1.10 test.com.vn
 ```
 ## Step 1: Tạo file cung cấp các thiết lập và yêu cầu cần thiết để tạo ra một Certificate Authority.
-- mkdir /etc/nginx/certs; cd /etc/nginx/certs
+- mkdir /etc/nginx/certs
+- cd /etc/nginx/certs
 - vi myAwesomeCA.cnf
 ```
 [ req ]
